@@ -1,2 +1,2 @@
-result = db.people.find({ "weight": { "$gte": "68", "$lt": "71.5" } })
+result = db.people.find({ "$and": [{ "nationality": "Germany" }, {"sex": "Male"}] })
 printjson(result)
