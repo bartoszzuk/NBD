@@ -1,5 +1,5 @@
 result = db.people.updateMany(
     { "job": "Editor" },
-    { $unset: { "email": "" }}
+    { "$unset": { "email": "" }}
 )
 printjson(result)
