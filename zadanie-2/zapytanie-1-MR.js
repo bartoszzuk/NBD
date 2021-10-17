@@ -15,10 +15,10 @@ const reduceFunction = function (key, values) {
     return reducedObject;
 };
 
-const result = db.people.mapReduce(
+const cursor = db.people.mapReduce(
     mapFunction,
     reduceFunction,
     { out: { inline: 1 } }
 );
 
-printjson(result.results)
+printjson(cursor.results)
