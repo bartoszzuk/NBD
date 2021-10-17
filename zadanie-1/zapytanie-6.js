@@ -1,4 +1,4 @@
-var cursor = db.people.insertOne({
+const cursor = db.people.insertOne({
     birth_date: "1998-06-05T16:00:00Z",
     credit: {
         type: "jcb",
@@ -23,4 +23,4 @@ var cursor = db.people.insertOne({
     sex: "Male",
     weight: "60.0"
 })
-printjson(cursor)
+printjson(cursorconst)

@@ -1,4 +1,4 @@
-var cursor = db.people.updateMany(
+const cursor = db.people.updateMany(
     { first_name: "Antonio" },
     { $set: { hobby: "pingpong" }}
 )
