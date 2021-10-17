@@ -1,5 +1,5 @@
-result = db.people.updateMany(
+var cursor = db.people.updateMany(
     { "location.city": "Moscow" },
-    { "$set": { "location.city": "Moskwa" }}
+    { $set: { "location.city": "Moskwa" }}
 )
-printjson(result)
+printjson(cursor)

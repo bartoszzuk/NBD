@@ -1,2 +1,2 @@
-result = db.people.findOne()
-printjson(result)
+var cursor = db.people.findOne();
+printjson(cursor);

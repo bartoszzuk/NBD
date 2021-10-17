@@ -1,2 +1,2 @@
-result = db.people.deleteMany({ "height": { "$gt": "190" }})
-printjson(result)
+var cursor = db.people.deleteMany({ height: { $gt: "190" }})
+printjson(cursor)

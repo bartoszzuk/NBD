@@ -1,31 +1,25 @@
 {
-  _id: ObjectId("61682357970a32ae9065e4b0"),
+  _id: ObjectId("616bcee6833de2f4185418f5"),
   sex: 'Male',
-  first_name: 'Harry',
-  last_name: 'Lawson',
-  job: 'Product Engineer',
-  email: 'hlawson2@flavors.me',
+  first_name: 'Wayne',
+  last_name: 'Fields',
+  job: 'Speech Pathologist',
+  email: 'wfields0@diigo.com',
   location: {
-    city: 'Tutong',
-    address: { streetname: 'Summerview', streetnumber: '93836' }
+    city: 'Oyo',
+    address: { streetname: 'Beilfuss', streetnumber: '860' }
   },
-  description: 'lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem',
-  height: '173.4',
-  weight: '75.25',
-  birth_date: '1965-02-18T07:22:24Z',
-  nationality: 'Brunei',
+  description: 'vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris',
+  height: '152.38',
+  weight: '66.81',
+  birth_date: '1990-02-21T02:55:03Z',
+  nationality: 'Nigeria',
   credit: [
     {
-      type: 'mastercard',
-      number: '56022541652043117',
+      type: 'switch',
+      number: '6759888939100098699',
       currency: 'COP',
-      balance: '3843.63'
-    },
-    {
-      type: 'jcb',
-      number: '5602220902466171',
-      currency: 'SEK',
-      balance: '3870.48'
+      balance: '5117.06'
     }
   ]
 }

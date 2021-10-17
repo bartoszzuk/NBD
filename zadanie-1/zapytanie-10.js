@@ -1,5 +1,5 @@
-result = db.people.updateMany(
-    { "job": "Editor" },
-    { "$unset": { "email": "" }}
+var cursor = db.people.updateMany(
+    { job: "Editor" },
+    { $unset: { email: "" }}
 )
-printjson(result)
+printjson(cursor)
