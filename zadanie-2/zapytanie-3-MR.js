@@ -5,7 +5,9 @@ db.people.mapReduce(
     { out: "result" }
 );
 
+// Just to have only id's
 const cursor = db.result.find({}, { value: false });
+
 printjson(cursor.toArray());
 
 // Cleanup
