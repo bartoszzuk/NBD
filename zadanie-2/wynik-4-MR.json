@@ -1,0 +1,805 @@
+DeprecationWarning: Collection.mapReduce() is deprecated. Use an aggregation instead.
+See https://docs.mongodb.com/manual/core/map-reduce for details.
+[
+  {
+    _id: 'Mauritania',
+    value: {
+      averageBmi: 21.56355023247727,
+      minimumBmi: 20.427479249813242,
+      maximumBmi: 22.6996212151413
+    }
+  },
+  {
+    _id: 'Estonia',
+    value: {
+      averageBmi: 25.542136169318564,
+      minimumBmi: 18.560878620789442,
+      maximumBmi: 28.68360155605993
+    }
+  },
+  {
+    _id: 'Macao',
+    value: {
+      averageBmi: 23.98847768982694,
+      minimumBmi: 23.98847768982694,
+      maximumBmi: 23.98847768982694
+    }
+  },
+  {
+    _id: 'Turkey',
+    value: {
+      averageBmi: 22.991591061963124,
+      minimumBmi: 22.712340024306464,
+      maximumBmi: 23.218818230827427
+    }
+  },
+  {
+    _id: 'Hungary',
+    value: {
+      averageBmi: 26.314073634053802,
+      minimumBmi: 22.357117184320284,
+      maximumBmi: 32.69237888437416
+    }
+  },
+  {
+    _id: 'Mexico',
+    value: {
+      averageBmi: 25.384445588551415,
+      minimumBmi: 17.298446794148454,
+      maximumBmi: 36.27087514967179
+    }
+  },
+  {
+    _id: 'Botswana',
+    value: {
+      averageBmi: 24.080448426345264,
+      minimumBmi: 17.209620064111167,
+      maximumBmi: 27.18178743838766
+    }
+  },
+  {
+    _id: 'El Salvador',
+    value: {
+      averageBmi: 25.348361001442793,
+      minimumBmi: 21.92582816065902,
+      maximumBmi: 33.56299576484531
+    }
+  },
+  {
+    _id: 'Tuvalu',
+    value: {
+      averageBmi: 22.604184356959067,
+      minimumBmi: 22.604184356959067,
+      maximumBmi: 22.604184356959067
+    }
+  },
+  {
+    _id: 'Russia',
+    value: {
+      averageBmi: 25.271506003352922,
+      minimumBmi: 15.959050973980357,
+      maximumBmi: 39.88445766499928
+    }
+  },
+  {
+    _id: 'United States',
+    value: {
+      averageBmi: 25.714043952231727,
+      minimumBmi: 18.501182435921706,
+      maximumBmi: 36.69514941999169
+    }
+  },
+  {
+    _id: 'Uruguay',
+    value: {
+      averageBmi: 25.32476196226835,
+      minimumBmi: 20.368800960879323,
+      maximumBmi: 34.361426322308105
+    }
+  },
+  {
+    _id: 'Bahamas',
+    value: {
+      averageBmi: 24.994816322414778,
+      minimumBmi: 22.243665360172294,
+      maximumBmi: 26.59649455139833
+    }
+  },
+  {
+    _id: 'Madagascar',
+    value: {
+      averageBmi: 24.783153547394935,
+      minimumBmi: 17.556666479697988,
+      maximumBmi: 30.189583737327382
+    }
+  },
+  {
+    _id: 'Indonesia',
+    value: {
+      averageBmi: 25.386897562233703,
+      minimumBmi: 14.752916025545577,
+      maximumBmi: 45.2254888114332
+    }
+  },
+  {
+    _id: 'Slovenia',
+    value: {
+      averageBmi: 25.041680484394,
+      minimumBmi: 17.370385779694157,
+      maximumBmi: 32.66109875399449
+    }
+  },
+  {
+    _id: 'Samoa',
+    value: {
+      averageBmi: 20.544882004532674,
+      minimumBmi: 20.544882004532674,
+      maximumBmi: 20.544882004532674
+    }
+  },
+  {
+    _id: 'Tanzania',
+    value: {
+      averageBmi: 25.78156706439409,
+      minimumBmi: 17.23592052068185,
+      maximumBmi: 34.9992957297564
+    }
+  },
+  {
+    _id: 'Angola',
+    value: {
+      averageBmi: 24.17967562103932,
+      minimumBmi: 18.36240074409329,
+      maximumBmi: 31.67480491405164
+    }
+  },
+  {
+    _id: 'Saudi Arabia',
+    value: {
+      averageBmi: 25.676484975670654,
+      minimumBmi: 19.971991294865283,
+      maximumBmi: 32.095388696280175
+    }
+  },
+  {
+    _id: 'Morocco',
+    value: {
+      averageBmi: 25.87499924181595,
+      minimumBmi: 20.182304322324796,
+      maximumBmi: 32.90604019213787
+    }
+  },
+  {
+    _id: 'Ecuador',
+    value: {
+      averageBmi: 25.66255028757021,
+      minimumBmi: 19.837789435759387,
+      maximumBmi: 31.540757595400457
+    }
+  },
+  {
+    _id: 'Slovakia',
+    value: {
+      averageBmi: 21.33881881098346,
+      minimumBmi: 21.33881881098346,
+      maximumBmi: 21.33881881098346
+    }
+  },
+  {
+    _id: 'Austria',
+    value: {
+      averageBmi: 27.93883177972952,
+      minimumBmi: 23.01532709975852,
+      maximumBmi: 37.259975846114166
+    }
+  },
+  {
+    _id: 'Belgium',
+    value: {
+      averageBmi: 26.140778626016402,
+      minimumBmi: 20.047926099827215,
+      maximumBmi: 28.997682388567068
+    }
+  },
+  {
+    _id: 'Rwanda',
+    value: {
+      averageBmi: 25.96047518885389,
+      minimumBmi: 22.834957662274157,
+      maximumBmi: 27.60395919371098
+    }
+  },
+  {
+    _id: 'Panama',
+    value: {
+      averageBmi: 24.99226462988103,
+      minimumBmi: 20.497034879989776,
+      maximumBmi: 33.20491691331714
+    }
+  },
+  {
+    _id: 'Brunei',
+    value: {
+      averageBmi: 25.02697259105827,
+      minimumBmi: 25.02697259105827,
+      maximumBmi: 25.02697259105827
+    }
+  },
+  {
+    _id: 'Honduras',
+    value: {
+      averageBmi: 25.48034274333804,
+      minimumBmi: 18.483295476526518,
+      maximumBmi: 35.220664454748544
+    }
+  },
+  {
+    _id: 'Pakistan',
+    value: {
+      averageBmi: 25.028163496881913,
+      minimumBmi: 17.507302336811122,
+      maximumBmi: 35.54144749573527
+    }
+  },
+  {
+    _id: 'Sri Lanka',
+    value: {
+      averageBmi: 24.576523965721474,
+      minimumBmi: 20.744421581687575,
+      maximumBmi: 28.60361966419167
+    }
+  },
+  {
+    _id: 'Chile',
+    value: {
+      averageBmi: 24.86968056067229,
+      minimumBmi: 16.9512916270108,
+      maximumBmi: 29.79885840825515
+    }
+  },
+  {
+    _id: 'Denmark',
+    value: {
+      averageBmi: 23.570666794473013,
+      minimumBmi: 21.08473436367003,
+      maximumBmi: 27.824860598421296
+    }
+  },
+  {
+    _id: 'Uzbekistan',
+    value: {
+      averageBmi: 25.8950867205865,
+      minimumBmi: 19.78219777101565,
+      maximumBmi: 32.30460851219658
+    }
+  },
+  {
+    _id: 'Libya',
+    value: {
+      averageBmi: 27.27409420047267,
+      minimumBmi: 21.42742372829579,
+      maximumBmi: 35.14959498858504
+    }
+  },
+  {
+    _id: 'United Kingdom',
+    value: {
+      averageBmi: 23.785736038981,
+      minimumBmi: 19.42792867188164,
+      maximumBmi: 31.903158982438526
+    }
+  },
+  {
+    _id: 'Nicaragua',
+    value: {
+      averageBmi: 23.962942198175195,
+      minimumBmi: 19.7754882642013,
+      maximumBmi: 30.0372110793386
+    }
+  },
+  {
+    _id: 'Burundi',
+    value: {
+      averageBmi: 25.64831294896216,
+      minimumBmi: 23.41760581267604,
+      maximumBmi: 28.50245013159454
+    }
+  },
+  {
+    _id: 'Ukraine',
+    value: {
+      averageBmi: 25.087610733459503,
+      minimumBmi: 16.525546999186044,
+      maximumBmi: 36.84222756372363
+    }
+  },
+  {
+    _id: 'Egypt',
+    value: {
+      averageBmi: 24.27917224908558,
+      minimumBmi: 17.650429873238075,
+      maximumBmi: 32.033722500448945
+    }
+  },
+  {
+    _id: 'Haiti',
+    value: {
+      averageBmi: 25.435603301304152,
+      minimumBmi: 18.63873039318409,
+      maximumBmi: 34.706505929936306
+    }
+  },
+  {
+    _id: 'Guinea-Bissau',
+    value: {
+      averageBmi: 24.42720412339052,
+      minimumBmi: 23.28512818429207,
+      maximumBmi: 26.54403588086242
+    }
+  },
+  {
+    _id: 'Malta',
+    value: {
+      averageBmi: 26.169580448971242,
+      minimumBmi: 22.120384249306703,
+      maximumBmi: 36.01978908588236
+    }
+  },
+  {
+    _id: 'Oman',
+    value: {
+      averageBmi: 25.688221135833007,
+      minimumBmi: 23.599509054084226,
+      maximumBmi: 27.084022161790852
+    }
+  },
+  {
+    _id: 'Fiji',
+    value: {
+      averageBmi: 21.202149695398855,
+      minimumBmi: 21.202149695398855,
+      maximumBmi: 21.202149695398855
+    }
+  },
+  {
+    _id: 'Portugal',
+    value: {
+      averageBmi: 25.271086444105404,
+      minimumBmi: 15.639034707565335,
+      maximumBmi: 39.66789019620169
+    }
+  },
+  {
+    _id: 'Sweden',
+    value: {
+      averageBmi: 25.66287503700499,
+      minimumBmi: 17.42205589422015,
+      maximumBmi: 40.088590561693096
+    }
+  },
+  {
+    _id: 'Paraguay',
+    value: {
+      averageBmi: 25.118908017345472,
+      minimumBmi: 21.194188847738655,
+      maximumBmi: 32.977747972844995
+    }
+  },
+  {
+    _id: 'Lesotho',
+    value: {
+      averageBmi: 25.35989698056186,
+      minimumBmi: 19.804653958825412,
+      maximumBmi: 30.164460328890495
+    }
+  },
+  {
+    _id: 'Kazakhstan',
+    value: {
+      averageBmi: 25.872296835537163,
+      minimumBmi: 16.8070799358325,
+      maximumBmi: 36.896740125150984
+    }
+  },
+  {
+    _id: 'Palau',
+    value: {
+      averageBmi: 29.619032693868498,
+      minimumBmi: 29.238705428689137,
+      maximumBmi: 29.99935995904786
+    }
+  },
+  {
+    _id: 'Nepal',
+    value: {
+      averageBmi: 26.43434938647296,
+      minimumBmi: 19.748973244733463,
+      maximumBmi: 31.078489717648623
+    }
+  },
+  {
+    _id: 'Israel',
+    value: {
+      averageBmi: 25.06359659422907,
+      minimumBmi: 16.525549024295877,
+      maximumBmi: 30.144835680296357
+    }
+  },
+  {
+    _id: 'Vanuatu',
+    value: {
+      averageBmi: 24.69754891291689,
+      minimumBmi: 23.049311522774556,
+      maximumBmi: 27.20784148023659
+    }
+  },
+  {
+    _id: 'Palestinian Territory',
+    value: {
+      averageBmi: 25.51977107836518,
+      minimumBmi: 19.179525110549175,
+      maximumBmi: 35.54150728191122
+    }
+  },
+  {
+    _id: 'Georgia',
+    value: {
+      averageBmi: 24.320295824417713,
+      minimumBmi: 19.907789367690288,
+      maximumBmi: 27.6963070482808
+    }
+  },
+  {
+    _id: 'Tajikistan',
+    value: {
+      averageBmi: 24.961843320223547,
+      minimumBmi: 19.990278828313503,
+      maximumBmi: 31.132650605821127
+    }
+  },
+  {
+    _id: 'Northern Mariana Islands',
+    value: {
+      averageBmi: 25.912320610983855,
+      minimumBmi: 25.912320610983855,
+      maximumBmi: 25.912320610983855
+    }
+  },
+  {
+    _id: 'Central African Republic',
+    value: {
+      averageBmi: 23.916787330266967,
+      minimumBmi: 19.614899401982278,
+      maximumBmi: 28.954561237220556
+    }
+  },
+  {
+    _id: 'Iran',
+    value: {
+      averageBmi: 25.852744467464767,
+      minimumBmi: 18.237996217377763,
+      maximumBmi: 37.98020856315509
+    }
+  },
+  {
+    _id: 'Ireland',
+    value: {
+      averageBmi: 25.946026932861393,
+      minimumBmi: 17.75318004974459,
+      maximumBmi: 33.51950090390849
+    }
+  },
+  {
+    _id: 'Greece',
+    value: {
+      averageBmi: 25.70078204567052,
+      minimumBmi: 18.2408247665103,
+      maximumBmi: 41.52589808442401
+    }
+  },
+  {
+    _id: 'Japan',
+    value: {
+      averageBmi: 25.28897911812305,
+      minimumBmi: 18.90452276508069,
+      maximumBmi: 37.208271542614156
+    }
+  },
+  {
+    _id: 'Spain',
+    value: {
+      averageBmi: 26.172174392961132,
+      minimumBmi: 21.71883995935713,
+      maximumBmi: 34.9356602063431
+    }
+  },
+  {
+    _id: 'Belarus',
+    value: {
+      averageBmi: 25.469679075687008,
+      minimumBmi: 17.86291107456045,
+      maximumBmi: 33.93864732017481
+    }
+  },
+  {
+    _id: 'Ivory Coast',
+    value: {
+      averageBmi: 26.73916221830437,
+      minimumBmi: 20.497202679469442,
+      maximumBmi: 35.26565858224913
+    }
+  },
+  {
+    _id: 'Togo',
+    value: {
+      averageBmi: 23.268539811569156,
+      minimumBmi: 21.483089176370907,
+      maximumBmi: 24.559999693631624
+    }
+  },
+  {
+    _id: 'Bangladesh',
+    value: {
+      averageBmi: 26.69345628894041,
+      minimumBmi: 19.809821191475773,
+      maximumBmi: 34.06297114172176
+    }
+  },
+  {
+    _id: 'Benin',
+    value: {
+      averageBmi: 25.77836456996179,
+      minimumBmi: 21.326707132619113,
+      maximumBmi: 30.296481888973993
+    }
+  },
+  {
+    _id: 'Zimbabwe',
+    value: {
+      averageBmi: 26.97591880240733,
+      minimumBmi: 22.609825375832813,
+      maximumBmi: 35.12027773402992
+    }
+  },
+  {
+    _id: 'Sierra Leone',
+    value: {
+      averageBmi: 25.113042227498756,
+      minimumBmi: 19.49887642053163,
+      maximumBmi: 33.448269454681686
+    }
+  },
+  {
+    _id: 'Marshall Islands',
+    value: {
+      averageBmi: 24.4362224388107,
+      minimumBmi: 22.403515045781823,
+      maximumBmi: 26.899880561973735
+    }
+  },
+  {
+    _id: 'Guyana',
+    value: {
+      averageBmi: 26.155629974879574,
+      minimumBmi: 24.096889211890876,
+      maximumBmi: 28.21437073786827
+    }
+  },
+  {
+    _id: 'Costa Rica',
+    value: {
+      averageBmi: 24.650437337200206,
+      minimumBmi: 20.494010942211922,
+      maximumBmi: 28.898569613792322
+    }
+  },
+  {
+    _id: 'Myanmar',
+    value: {
+      averageBmi: 25.964386191009893,
+      minimumBmi: 20.99743660839639,
+      maximumBmi: 31.448459395139444
+    }
+  },
+  {
+    _id: 'Guatemala',
+    value: {
+      averageBmi: 25.595923417930123,
+      minimumBmi: 19.619608992088942,
+      maximumBmi: 32.13075314700059
+    }
+  },
+  {
+    _id: 'Argentina',
+    value: {
+      averageBmi: 25.625245579612248,
+      minimumBmi: 17.58733455568425,
+      maximumBmi: 34.13224063185605
+    }
+  },
+  {
+    _id: 'Gabon',
+    value: {
+      averageBmi: 25.657536728265534,
+      minimumBmi: 22.266802561601597,
+      maximumBmi: 29.04827089492947
+    }
+  },
+  {
+    _id: 'Cape Verde',
+    value: {
+      averageBmi: 25.33466174988547,
+      minimumBmi: 19.20724222151505,
+      maximumBmi: 35.04527266278727
+    }
+  },
+  {
+    _id: 'Senegal',
+    value: {
+      averageBmi: 23.415570863855162,
+      minimumBmi: 21.10083404913989,
+      maximumBmi: 26.591448446940536
+    }
+  },
+  {
+    _id: 'Reunion',
+    value: {
+      averageBmi: 26.421775697845295,
+      minimumBmi: 18.72890348175829,
+      maximumBmi: 39.16506059010436
+    }
+  },
+  {
+    _id: 'Hong Kong',
+    value: {
+      averageBmi: 27.28283221221082,
+      minimumBmi: 27.28283221221082,
+      maximumBmi: 27.28283221221082
+    }
+  },
+  {
+    _id: 'Swaziland',
+    value: {
+      averageBmi: 20.902625563889615,
+      minimumBmi: 20.902625563889615,
+      maximumBmi: 20.902625563889615
+    }
+  },
+  {
+    _id: 'Kiribati',
+    value: {
+      averageBmi: 23.104683336146245,
+      minimumBmi: 23.104683336146245,
+      maximumBmi: 23.104683336146245
+    }
+  },
+  {
+    _id: 'Italy',
+    value: {
+      averageBmi: 25.224448562759804,
+      minimumBmi: 18.626656995429222,
+      maximumBmi: 31.28284127929142
+    }
+  },
+  {
+    _id: 'Mozambique',
+    value: {
+      averageBmi: 25.56294360884168,
+      minimumBmi: 22.800359685650264,
+      maximumBmi: 29.44789535394624
+    }
+  },
+  {
+    _id: 'Armenia',
+    value: {
+      averageBmi: 24.941789322543038,
+      minimumBmi: 19.17386933002285,
+      maximumBmi: 31.668511004463014
+    }
+  },
+  {
+    _id: 'Saint Lucia',
+    value: {
+      averageBmi: 23.007900513203566,
+      minimumBmi: 20.263359356035604,
+      maximumBmi: 27.57036153167093
+    }
+  },
+  {
+    _id: 'Niger',
+    value: {
+      averageBmi: 26.384679570852143,
+      minimumBmi: 20.072042961863815,
+      maximumBmi: 30.22683231486928
+    }
+  },
+  {
+    _id: 'Bhutan',
+    value: {
+      averageBmi: 24.056604894581998,
+      minimumBmi: 19.41885638320743,
+      maximumBmi: 31.35770002294631
+    }
+  },
+  {
+    _id: 'Taiwan',
+    value: {
+      averageBmi: 26.610153474174844,
+      minimumBmi: 20.359929764833222,
+      maximumBmi: 31.171391695878288
+    }
+  },
+  {
+    _id: 'Nigeria',
+    value: {
+      averageBmi: 24.802388203011226,
+      minimumBmi: 16.860335772659223,
+      maximumBmi: 36.16277887197436
+    }
+  },
+  {
+    _id: 'Kyrgyzstan',
+    value: {
+      averageBmi: 23.794563173538727,
+      minimumBmi: 16.846474930530864,
+      maximumBmi: 34.05576978971841
+    }
+  },
+  {
+    _id: 'Wallis and Futuna',
+    value: {
+      averageBmi: 26.38253925838278,
+      minimumBmi: 24.33390757821489,
+      maximumBmi: 28.43117093855067
+    }
+  },
+  {
+    _id: 'Algeria',
+    value: {
+      averageBmi: 28.594463853802736,
+      minimumBmi: 28.594463853802736,
+      maximumBmi: 28.594463853802736
+    }
+  },
+  {
+    _id: 'Azerbaijan',
+    value: {
+      averageBmi: 25.95352117807468,
+      minimumBmi: 18.770569815679924,
+      maximumBmi: 36.93348217200575
+    }
+  },
+  {
+    _id: 'Chad',
+    value: {
+      averageBmi: 25.905763020970006,
+      minimumBmi: 19.379712122869797,
+      maximumBmi: 32.14867661954464
+    }
+  },
+  {
+    _id: 'Australia',
+    value: {
+      averageBmi: 25.195047158310075,
+      minimumBmi: 20.65310909810227,
+      maximumBmi: 29.824555993432543
+    }
+  },
+  {
+    _id: 'Nauru',
+    value: {
+      averageBmi: 22.91236113053845,
+      minimumBmi: 22.91236113053845,
+      maximumBmi: 22.91236113053845
+    }
+  },
+  {
+    _id: 'Tunisia',
+    value: {
+      averageBmi: 23.80619175430109,
+      minimumBmi: 17.900338466793517,
+      maximumBmi: 30.378661433345993
+    }
+  },
+  ... 101 more items
+]
