@@ -2,7 +2,7 @@
 db.people.mapReduce(
     function () { emit(this.job, null) },
     function (key, values) { return key },
-    { out: 'result' }
+    { out: "result" }
 );
 
 const cursor = db.result.find({}, { value: false });
