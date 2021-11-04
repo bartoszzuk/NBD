@@ -13,3 +13,18 @@
     RETURN director, directed, wrote, movie
 8.  MATCH (hugo:Person {name: 'Hugo Weaving'})-[acted:ACTED_IN]->(movie:Movie)<-[alsoActed:ACTED_IN]-(keanu:Person {name: 'Keanu Reeves'})
     RETURN hugo, acted, movie, alsoActed, keanu
+9.  CREATE (captainAmerica:Movie {title: 'Captain America: The First Avenger', released: 2011, tagline: 'When patriots become heroes.'})
+    MERGE (chris:Person {name: 'Chris Evans', born: 1981})
+    MERGE (hugo:Person {name: 'Hugo Weaving', born: 1960})
+    MERGE (samuel:Person {name: 'Samuel L. Jackson', born: 1948})
+    MERGE (joe:Person {name: 'Joe Johnston', born: 1950})
+    MERGE (christopher:Person {name: 'Christopher Markus', born: 1970})
+    CREATE
+    (chris)-[:ACTED_IN {roles:['Captain America']}]->(captainAmerica),
+    (hugo)-[:ACTED_IN {roles:['Red Skull']}]->(captainAmerica),
+    (samuel)-[:ACTED_IN {roles:['Nick Fury']}]->(captainAmerica),
+    (joe)-[:DIRECTED]->(captainAmerica),
+    (christopher)-[:WROTE]->(captainAmerica)
+
+    MATCH (captainAmerica:Movie {title: 'Captain America: The First Avenger'})<-[involved]-(person:Person)
+    RETURN captainAmerica, involved, person

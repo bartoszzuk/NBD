@@ -1,0 +1,168 @@
+﻿[
+  {
+    "captainAmerica": {
+"identity": 356,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "When patriots become heroes.",
+"title": "Captain America: The First Avenger",
+"released": 2011
+      }
+    },
+    "involved": {
+"identity": 524,
+"start": 359,
+"end": 356,
+"type": "DIRECTED",
+"properties": {
+
+      }
+    },
+    "person": {
+"identity": 359,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Joe Johnston",
+"born": 1950
+      }
+    }
+  },
+  {
+    "captainAmerica": {
+"identity": 356,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "When patriots become heroes.",
+"title": "Captain America: The First Avenger",
+"released": 2011
+      }
+    },
+    "involved": {
+"identity": 521,
+"start": 357,
+"end": 356,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "Captain America"
+        ]
+      }
+    },
+    "person": {
+"identity": 357,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Chris Evans",
+"born": 1981
+      }
+    }
+  },
+  {
+    "captainAmerica": {
+"identity": 356,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "When patriots become heroes.",
+"title": "Captain America: The First Avenger",
+"released": 2011
+      }
+    },
+    "involved": {
+"identity": 523,
+"start": 358,
+"end": 356,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "Nick Fury"
+        ]
+      }
+    },
+    "person": {
+"identity": 358,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Samuel L. Jackson",
+"born": 1948
+      }
+    }
+  },
+  {
+    "captainAmerica": {
+"identity": 356,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "When patriots become heroes.",
+"title": "Captain America: The First Avenger",
+"released": 2011
+      }
+    },
+    "involved": {
+"identity": 522,
+"start": 189,
+"end": 356,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "Red Skull"
+        ]
+      }
+    },
+    "person": {
+"identity": 189,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    }
+  },
+  {
+    "captainAmerica": {
+"identity": 356,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "When patriots become heroes.",
+"title": "Captain America: The First Avenger",
+"released": 2011
+      }
+    },
+    "involved": {
+"identity": 525,
+"start": 360,
+"end": 356,
+"type": "WROTE",
+"properties": {
+
+      }
+    },
+    "person": {
+"identity": 360,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Christopher Markus",
+"born": 1970
+      }
+    }
+  }
+]
