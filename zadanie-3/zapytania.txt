@@ -7,3 +7,5 @@
     RETURN hugo, acted, movie, alsoActed, actor
 5.  MATCH (matrix:Movie {title: 'The Matrix'})<-[actedInMatrix:ACTED_IN]-(actor:Person)-[acted:ACTED_IN]->(movie:Movie)
     RETURN matrix, actedInMatrix, actor, acted, movie
+6.  MATCH (actor:Person)-[acted:ACTED_IN]->(movie:Movie)    // No need for WHERE clause - actors with no movies will not be pulled by relationship.
+    RETURN  actor, COUNT(acted) AS actedMoviesCount
