@@ -1,1 +1,2 @@
 1. MATCH (movie:Movie) RETURN movie
+2. MATCH (actor:Person {name: 'Hugo Weaving'})-[:ACTED_IN]->(movie:Movie) RETURN actor, movie
