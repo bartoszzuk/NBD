@@ -1,5 +1,31 @@
 ﻿[
   {
+    "actor": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "acted": {
+"identity": 138,
+"start": 4,
+"end": 105,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "Bill Smoke",
+          "Haskell Moore",
+          "Tadeusz Kesselring",
+          "Nurse Noakes",
+          "Boardman Mephi",
+          "Old Georgie"
+        ]
+      }
+    },
     "movie": {
 "identity": 105,
 "labels": [
@@ -13,6 +39,27 @@
     }
   },
   {
+    "actor": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "acted": {
+"identity": 149,
+"start": 4,
+"end": 114,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "V"
+        ]
+      }
+    },
     "movie": {
 "identity": 114,
 "labels": [
@@ -26,6 +73,27 @@
     }
   },
   {
+    "actor": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "acted": {
+"identity": 18,
+"start": 4,
+"end": 10,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "Agent Smith"
+        ]
+      }
+    },
     "movie": {
 "identity": 10,
 "labels": [
@@ -39,6 +107,27 @@
     }
   },
   {
+    "actor": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "acted": {
+"identity": 11,
+"start": 4,
+"end": 9,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "Agent Smith"
+        ]
+      }
+    },
     "movie": {
 "identity": 9,
 "labels": [
@@ -52,6 +141,27 @@
     }
   },
   {
+    "actor": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "acted": {
+"identity": 3,
+"start": 4,
+"end": 0,
+"type": "ACTED_IN",
+"properties": {
+"roles": [
+          "Agent Smith"
+        ]
+      }
+    },
     "movie": {
 "identity": 0,
 "labels": [
