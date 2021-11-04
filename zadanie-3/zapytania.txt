@@ -9,3 +9,5 @@
     RETURN matrix, actedInMatrix, actor, acted, movie
 6.  MATCH (actor:Person)-[acted:ACTED_IN]->(movie:Movie)    // No need for WHERE clause - actors with no movies will not be pulled by relationship.
     RETURN  actor, COUNT(acted) AS actedMoviesCount
+7.  MATCH (director:Person)-[directed:DIRECTED]->(movie:Movie)<-[wrote:WROTE]-(director)
+    RETURN director, directed, wrote, movie
