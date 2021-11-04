@@ -1,4 +1,9 @@
-1. MATCH (movie:Movie) RETURN movie
-2. MATCH (actor:Person {name: 'Hugo Weaving'})-[acted:ACTED_IN]->(movie:Movie) RETURN actor, acted, movie
-3. MATCH (actor:Person {name: 'Hugo Weaving'})-[acted:ACTED_IN]->(movie:Movie)<-[directed:DIRECTED]-(director:Person) RETURN actor, acted, movie, directed, director
-4. MATCH (hugo:Person {name: 'Hugo Weaving'})-[:ACTED_IN]->(movie:Movie)<-[:ACTED_IN]-(actor:Person) RETURN hugo, movie, actor
+1.  MATCH (movie:Movie) RETURN movie
+2.  MATCH (actor:Person {name: 'Hugo Weaving'})-[acted:ACTED_IN]->(movie:Movie)
+    RETURN actor, acted, movie
+3.  MATCH (actor:Person {name: 'Hugo Weaving'})-[acted:ACTED_IN]->(movie:Movie)<-[directed:DIRECTED]-(director:Person)
+    RETURN actor, acted, movie, directed, director
+4.  MATCH (hugo:Person {name: 'Hugo Weaving'})-[acted:ACTED_IN]->(movie:Movie)<-[alsoActed:ACTED_IN]-(actor:Person)
+    RETURN hugo, acted, movie, alsoActed, actor
+5.  MATCH (matrix:Movie {title: 'The Matrix'})<-[actedInMatrix:ACTED_IN]-(actor:Person)-[acted:ACTED_IN]->(movie:Movie)
+    RETURN matrix, actedInMatrix, actor, acted, movie
