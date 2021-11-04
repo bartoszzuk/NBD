@@ -1,15 +1,5 @@
 ﻿[
   {
-    "actor": {
-"identity": 4,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Hugo Weaving",
-"born": 1960
-      }
-    },
     "movie": {
 "identity": 105,
 "labels": [
@@ -23,16 +13,6 @@
     }
   },
   {
-    "actor": {
-"identity": 4,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Hugo Weaving",
-"born": 1960
-      }
-    },
     "movie": {
 "identity": 114,
 "labels": [
@@ -46,16 +26,6 @@
     }
   },
   {
-    "actor": {
-"identity": 4,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Hugo Weaving",
-"born": 1960
-      }
-    },
     "movie": {
 "identity": 10,
 "labels": [
@@ -69,16 +39,6 @@
     }
   },
   {
-    "actor": {
-"identity": 4,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Hugo Weaving",
-"born": 1960
-      }
-    },
     "movie": {
 "identity": 9,
 "labels": [
@@ -92,16 +52,6 @@
     }
   },
   {
-    "actor": {
-"identity": 4,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Hugo Weaving",
-"born": 1960
-      }
-    },
     "movie": {
 "identity": 0,
 "labels": [
