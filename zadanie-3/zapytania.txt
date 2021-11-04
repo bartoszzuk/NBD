@@ -1,2 +1,3 @@
 1. MATCH (movie:Movie) RETURN movie
-2. MATCH (actor:Person {name: 'Hugo Weaving'})-[:ACTED_IN]->(movie:Movie) RETURN actor, movie
+2. MATCH (actor:Person {name: 'Hugo Weaving'})-[:ACTED_IN]->(movie:Movie) RETURN movie
+3. MATCH (actor:Person {name: 'Hugo Weaving'})-[ACTED_IN]->(movie:Movie)<-[DIRECTED]-(director:Person) RETURN director
