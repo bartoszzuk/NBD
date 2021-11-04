@@ -11,3 +11,5 @@
     RETURN  actor, COUNT(acted) AS actedMoviesCount
 7.  MATCH (director:Person)-[directed:DIRECTED]->(movie:Movie)<-[wrote:WROTE]-(director)
     RETURN director, directed, wrote, movie
+8.  MATCH (hugo:Person {name: 'Hugo Weaving'})-[acted:ACTED_IN]->(movie:Movie)<-[alsoActed:ACTED_IN]-(keanu:Person {name: 'Keanu Reeves'})
+    RETURN hugo, acted, movie, alsoActed, keanu
