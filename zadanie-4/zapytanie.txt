@@ -2,3 +2,7 @@
 1.  MATCH (darjeeling:town {name: 'Darjeeling'}), (sandakphu:peak {name: 'Sandakphu'}),
     path = shortestPath((darjeeling)-[*]->(sandakphu))
     RETURN sandakphu, path, darjeeling
+2.  MATCH (darjeeling:town {name: 'Darjeeling'}), (sandakphu:peak {name: 'Sandakphu'}),
+    path = shortestPath((darjeeling)-[*]->(sandakphu))
+    WHERE ALL(connection IN relationships(path) WHERE connection.winter = 'true')
+    RETURN sandakphu, path, darjeeling
