@@ -1,8 +1,15 @@
 // Part 1
 1.  MATCH (darjeeling:town {name: 'Darjeeling'}), (sandakphu:peak {name: 'Sandakphu'}),
-    path = shortestPath((darjeeling)-[*]->(sandakphu))
+    path = allShortestPaths((darjeeling)-[*]->(sandakphu))
     RETURN sandakphu, path, darjeeling
 2.  MATCH (darjeeling:town {name: 'Darjeeling'}), (sandakphu:peak {name: 'Sandakphu'}),
-    path = shortestPath((darjeeling)-[*]->(sandakphu))
+    path = allShortestPaths((darjeeling)-[*]->(sandakphu))
     WHERE ALL(connection IN relationships(path) WHERE connection.winter = 'true')
     RETURN sandakphu, path, darjeeling
+3.  MATCH path = (darjeeling:town {name: 'Darjeeling'})-[*]->(sandakphu:peak {name: 'Sandakphu'})
+    RETURN darjeeling.name, REDUCE (totalDistance = 0, connection in relationships(path) | totalDistance + connection.distance) AS totalDistance, sandakphu.name
+    ORDER BY totalDistance
+
+?.  MATCH path = (darjeeling:town {name: 'Darjeeling'})-[*]->(place)
+    WHERE ALL(connection IN relationships(path) WHERE connection.summer = 'true' AND TYPE(connection) = 'trek')
+    RETURN darjeeling, path, place
