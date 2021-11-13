@@ -6,10 +6,13 @@
     path = allShortestPaths((darjeeling)-[*]->(sandakphu))
     WHERE ALL(connection IN relationships(path) WHERE connection.winter = 'true')
     RETURN sandakphu, path, darjeeling
-3.  MATCH path = (darjeeling:town {name: 'Darjeeling'})-[*]->(sandakphu:peak {name: 'Sandakphu'})
-    RETURN darjeeling.name, REDUCE (totalDistance = 0, connection in relationships(path) | totalDistance + connection.distance) AS totalDistance, sandakphu.name
-    ORDER BY totalDistance
 
-?.  MATCH path = (darjeeling:town {name: 'Darjeeling'})-[*]->(place)
-    WHERE ALL(connection IN relationships(path) WHERE connection.summer = 'true' AND TYPE(connection) = 'trek')
-    RETURN darjeeling, path, place
+3.  // Nie do końca wiedziałem jak zrobić ten podpunkt w jednym zapytaniu. Więc podzieliłem je na dwa podpunkty.
+
+3.1.    MATCH path = (darjeeling:town {name: 'Darjeeling'})-[*]->(sandakphu:peak {name: 'Sandakphu'})
+        RETURN darjeeling.name, REDUCE (totalDistance = 0, connection in relationships(path) | totalDistance + connection.distance) AS totalDistance, sandakphu.name
+        ORDER BY totalDistance
+
+3.2.    MATCH path = (darjeeling:town {name: 'Darjeeling'})-[*]->(place)
+        WHERE ALL(connection IN relationships(path) WHERE connection.summer = 'true' AND TYPE(connection) = 'trek')
+        RETURN darjeeling, path, place
