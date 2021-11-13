@@ -16,3 +16,6 @@
 3.2.    MATCH path = (darjeeling:town {name: 'Darjeeling'})-[*]->(place)
         WHERE ALL(connection IN relationships(path) WHERE connection.summer = 'true' AND TYPE(connection) = 'trek')
         RETURN darjeeling, path, place
+
+4.  MATCH (airport:Airport)<-[origins:ORIGIN]-(:Flight)
+    RETURN airport.name, COUNT(origins) as flightOriginsCount
