@@ -1,0 +1,8 @@
+{
+  "name": "Schwarzenegger",
+  "party": "Democratic",
+  "numberOfTerms": 5,
+  "isAlive": true,
+  "hasTwitter": true,
+  "age": 74
+}

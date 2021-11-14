@@ -1,0 +1,11 @@
+Successfully loaded data from file data.json
+
+Successfully uploaded data with key schwarzenegger to bucket s18174
+Response: {'name': 'Schwarzenegger', 'party': 'Democratic', 'numberOfTerms': 5, 'isAlive': True, 'hasTwitter': True, 'age': 74}
+
+Successfully updated data with key schwarzenegger in bucket s18174
+Response: {'name': 'Schwarzenegger', 'party': 'Democratic', 'numberOfTerms': 5, 'isAlive': True, 'hasTwitter': True, 'age': 74, 'addedField': 'I was added programmatically'}
+
+Successfully deleted data with key schwarzenegger in bucket s18174
+Data with key schwarzenegger does not exist
+Response: None
