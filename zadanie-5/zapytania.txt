@@ -1,0 +1,23 @@
+1.  curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Biden", "party": "Democratic", "numberOfTerms": 1, "isAlive": true}' http://localhost:8098/buckets/s18174/keys/biden
+    curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Obama", "party": "Democratic", "numberOfTerms": 2, "isAlive": true}' http://localhost:8098/buckets/s18174/keys/obama
+    curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Trump", "party": "Republican", "numberOfTerms": 1, "isAlive": true}' http://localhost:8098/buckets/s18174/keys/trump
+    curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Kennedy", "party": "Democratic", "numberOfTerms": 1, "isAlive": false}' http://localhost:8098/buckets/s18174/keys/kennedy
+    curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Roosevelt", "party": "Democratic", "numberOfTerms": 4, "isAlive": false}' http://localhost:8098/buckets/s18174/keys/roosevelt
+
+2.  curl -i -XGET  http://localhost:8098/buckets/s18174/keys/obama
+
+3.  curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Trump", "party": "Republican", "numberOfTerms": 1, "isAlive": true, "hasTwitter": false}' http://localhost:8098/buckets/s18174/keys/trump
+
+4.  curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Roosevelt", "party": "Democratic", "isAlive": false}' http://localhost:8098/buckets/s18174/keys/roosevelt
+
+5.  curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Kennedy", "party": "Democratic", "numberOfTerms": 1, "isAlive": true}' http://localhost:8098/buckets/s18174/keys/kennedy
+
+6.  curl -i -XDELETE http://localhost:8098/buckets/s18174/keys/roosevelt
+
+7.  curl -i -XGET  http://localhost:8098/buckets/s15407/keys/nonexistant
+
+8.  curl -i -XPOST -H "Content-Type: application/json" -d '{"randomField": 100}' http://localhost:8098/buckets/s18174/keys
+
+9.  curl -i -XGET  http://localhost:8098/buckets/s18174/keys/K1lFEOEkDfosqrkbyRlsAReMnDw
+
+10. curl -i -XDELETE  http://localhost:8098/buckets/s18174/keys/K1lFEOEkDfosqrkbyRlsAReMnDw

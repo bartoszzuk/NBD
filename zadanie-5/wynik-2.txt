@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvi+4IMnJwOCnmMGUyJjHysC9jPU2XxYA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s18174>; rel="up"
+Last-Modified: Sun, 14 Nov 2021 15:23:55 GMT
+ETag: "NYp5etjzDYjW853A52P3q"
+Date: Sun, 14 Nov 2021 15:27:45 GMT
+Content-Type: application/json
+Content-Length: 77
+
+{"name": "Obama", "party": "Democratic", "numberOfTerms": 2, "isAlive": true}
