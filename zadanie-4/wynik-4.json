@@ -1,0 +1,202 @@
+﻿[
+  {
+    "airport.name": "SEA",
+    "flightOriginsCount": 3
+  },
+  {
+    "airport.name": "EWR",
+    "flightOriginsCount": 7
+  },
+  {
+    "airport.name": "IAH",
+    "flightOriginsCount": 23
+  },
+  {
+    "airport.name": "SAT",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "MCO",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "LAX",
+    "flightOriginsCount": 22
+  },
+  {
+    "airport.name": "FLL",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "ORD",
+    "flightOriginsCount": 48
+  },
+  {
+    "airport.name": "MSP",
+    "flightOriginsCount": 9
+  },
+  {
+    "airport.name": "KOA",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "PDX",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "SFO",
+    "flightOriginsCount": 14
+  },
+  {
+    "airport.name": "IAD",
+    "flightOriginsCount": 12
+  },
+  {
+    "airport.name": "SMF",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "RIC",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "IND",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "BOS",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "DEN",
+    "flightOriginsCount": 18
+  },
+  {
+    "airport.name": "DFW",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "SLC",
+    "flightOriginsCount": 5
+  },
+  {
+    "airport.name": "MCI",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "MSN",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "SNA",
+    "flightOriginsCount": 2
+  },
+  {
+    "airport.name": "HNL",
+    "flightOriginsCount": 5
+  },
+  {
+    "airport.name": "SAN",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "LAS",
+    "flightOriginsCount": 2
+  },
+  {
+    "airport.name": "ATL",
+    "flightOriginsCount": 2
+  },
+  {
+    "airport.name": "CMH",
+    "flightOriginsCount": 2
+  },
+  {
+    "airport.name": "SJC",
+    "flightOriginsCount": 2
+  },
+  {
+    "airport.name": "PHX",
+    "flightOriginsCount": 3
+  },
+  {
+    "airport.name": "BIL",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "LGA",
+    "flightOriginsCount": 2
+  },
+  {
+    "airport.name": "ROC",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "CLT",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "DCA",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "BHM",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "BNA",
+    "flightOriginsCount": 12
+  },
+  {
+    "airport.name": "CVG",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "PBI",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "MIA",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "ABQ",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "FAT",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "TUS",
+    "flightOriginsCount": 2
+  },
+  {
+    "airport.name": "DLH",
+    "flightOriginsCount": 4
+  },
+  {
+    "airport.name": "FSD",
+    "flightOriginsCount": 5
+  },
+  {
+    "airport.name": "MOB",
+    "flightOriginsCount": 1
+  },
+  {
+    "airport.name": "SBN",
+    "flightOriginsCount": 3
+  },
+  {
+    "airport.name": "AZO",
+    "flightOriginsCount": 13
+  },
+  {
+    "airport.name": "DTW",
+    "flightOriginsCount": 25
+  },
+  {
+    "airport.name": "MOT",
+    "flightOriginsCount": 8
+  }
+]
