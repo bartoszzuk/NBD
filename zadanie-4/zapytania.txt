@@ -19,3 +19,17 @@
 
 4.  MATCH (airport:Airport)<-[origins:ORIGIN]-(:Flight)
     RETURN airport.name, COUNT(origins) as flightOriginsCount
+
+5.  MATCH (origin:Airport)<-[:ORIGIN]-(flight:Flight)-[:DESTINATION]->(destination:Airport)
+    CREATE path = (origin)-[:CONNECTION]->(flight)-[:CONNECTION]->(destination)
+    RETURN path
+
+    // Limit ceny został zmniejszony do 1000 (ale wystarczy podmienić na 3000),
+    // aby skrócić czas zapytania i poprawić czytelność grafu.
+    // Podobnie "relationship depth" został ograniczony do 5.
+    MATCH path = (:Airport {name: 'LAX'})-[:CONNECTION*..5]->(:Flight)-[:CONNECTION*..5]->(:Airport)
+    WITH path, [flight IN NODES(path) WHERE 'Flight' IN LABELS(flight)] AS flights
+    WITH path, [flight IN flights | [(flight)<-[:ASSIGN]-(ticket:Ticket {class: 'economy'}) | ticket][0]] AS tickets
+    WITH path, REDUCE(totalPrice = 0, ticket IN tickets | totalPrice + ticket.price) AS price
+    WHERE price < 1000
+    RETURN path, price
