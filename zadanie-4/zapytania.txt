@@ -33,3 +33,10 @@
     WITH path, REDUCE(totalPrice = 0, ticket IN tickets | totalPrice + ticket.price) AS price
     WHERE price < 1100
     RETURN path, price
+
+6.  MATCH path = (:Airport {name: 'LAX'})-[:CONNECTION*..5]->(:Flight)-[:CONNECTION*..5]->(:Airport)
+    WITH path, [flight IN NODES(path) WHERE 'Flight' IN LABELS(flight)] AS flights
+    WITH path, [flight IN flights | [(flight)<-[:ASSIGN]-(ticket:Ticket {class: 'economy'}) | ticket][0]] AS tickets
+    WITH path, REDUCE(totalPrice = 0, ticket IN tickets | totalPrice + ticket.price) AS price
+    WHERE price < 1100
+    RETURN path, price
