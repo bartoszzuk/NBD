@@ -4,16 +4,16 @@ class Exercise1 {
 
   def run(days: List[String]): Unit = {
     println("Exercise 1")
-    println(s"a) ${joinDayUsingForLoop(days)}")
+    println(s"a) ${joinDaysUsingForLoop(days)}")
     println(s"b) ${joinDaysStartingWith(days, prefix = "P")}")
-    println(s"c) ${joinDayUsingWhileLoop(days)}\n")
+    println(s"c) ${joinDaysUsingWhileLoop(days)}\n")
   }
 
-  def joinDayUsingForLoop(days: List[String]): String = {
+  def joinDaysUsingForLoop(days: List[String]): String = {
     var result = ""
     for (day <- days)
       result = result + ", " + day
-    result.replaceFirst(", ", "")
+    result.stripPrefix(", ")
   }
 
   def joinDaysStartingWith(days: List[String], prefix: String): String = {
@@ -22,10 +22,10 @@ class Exercise1 {
       if (day.startsWith(prefix))
         result = result + ", " + day
     }
-    result.replaceFirst(", ", "")
+    result.stripPrefix(", ")
   }
 
-  def joinDayUsingWhileLoop(days: List[String]): String = {
+  def joinDaysUsingWhileLoop(days: List[String]): String = {
     var result = ""
     var index = 0
 
@@ -33,7 +33,7 @@ class Exercise1 {
       result = result + ", " + days(index)
       index += 1
     }
-    result.replaceFirst(", ", "")
+    result.stripPrefix(", ")
   }
 
 }
