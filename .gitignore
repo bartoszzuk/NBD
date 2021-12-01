@@ -1,3 +1,4 @@
-./idea
-/zadanie-6/venv/
-/zadanie-7/*.iml
+.idea
+/zadanie-6/venv
+/out
+/**/*.iml
