@@ -13,28 +13,29 @@ class Exercise2 {
     println(s"Empty account withdraw 50 balance: ${emptyBankAccount.balance}")
 
     val fullBankAccount = new BankAccount(1000)
-    println(s"Full account starting balance: ${fullBankAccount.balance}")
+    println(s"Full account starting balance: ${fullBankAccount.balance}\n")
   }
 
 }
 
 
-class BankAccount(val startingBalance: Int) {
-  private var privateBalance: Int = startingBalance
+class BankAccount(initialBalance: Int) {
 
-  def balance: Int = privateBalance
+  private var _balance: Int = initialBalance
+
+  def balance: Int = _balance
 
   def this() = this(0)
 
   def withdraw(amount: Int): Int = {
-    if (privateBalance - amount < 0)
+    if (_balance - amount < 0)
       throw new IllegalArgumentException("Not enough funds")
-    privateBalance -= amount
+    _balance -= amount
     amount
   }
 
   def deposit(amount: Int): Unit = {
-    privateBalance += amount
+    _balance += amount
   }
 
 }
