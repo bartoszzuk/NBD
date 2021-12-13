@@ -7,8 +7,8 @@ object Main {
 
     new Exercise1().run(days)
     new Exercise2().run()
-//    new Exercise3().run(days)
-//    new Exercise4().run(days)
+    new Exercise3().run()
+    new Exercise4().run(10)
   }
 
 }
