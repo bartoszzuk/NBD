@@ -1,5 +1,7 @@
 package exercises
 
+import scala.collection.MapView
+
 class Exercise5 {
 
   def run(products: Map[String, Double]): Unit = {
@@ -19,7 +21,7 @@ class Exercise5 {
   }
 
   def discountProducts(products: Map[String, Double], discount: Double): Map[String, Double] = {
-    products.mapValues(price => price * (1 - discount))
+    products.view.mapValues(price => price * (1 - discount)).toMap
   }
 
 }
