@@ -20,24 +20,24 @@ object Main {
     println()
   }
 
-  def testExercises2(yes: Yes[Int], no: No): Unit = {
+  def testExercises2(maybe: Maybe[Int], other: Maybe[Nothing]): Unit = {
     println("Exercises 2")
-    println(s"Class No is subtype of Maybe: ${no.isInstanceOf[Maybe[_]]}")
-    println(s"Class Yes is subtype of Maybe: ${yes.isInstanceOf[Maybe[_]]}")
+    println(s"Class No is subtype of Maybe: ${other.isInstanceOf[Maybe[_]]}")
+    println(s"Class Yes is subtype of Maybe: ${maybe.isInstanceOf[Maybe[_]]}")
     println()
   }
 
-  def testExercises3(yes: Yes[Int], no: No): Unit = {
+  def testExercises3(maybe: Maybe[Int], other: Maybe[Nothing]): Unit = {
     println("Exercises 3")
-    println(s"Class No applyFunction result: ${no.applyFunction(_ => 12)}")
-    println(s"Class Yes applyFunction result: ${yes.applyFunction(value => value + 12)}")
+    println(s"Class No applyFunction result: ${other.applyFunction(_ => 12)}")
+    println(s"Class Yes applyFunction result: ${maybe.applyFunction(value => value + 12)}")
     println()
   }
 
-  def testExercises4(yes: Yes[Int], no: No): Unit = {
+  def testExercises4(maybe: Maybe[Int], other: Maybe[Nothing]): Unit = {
     println("Exercises 4")
-    println(s"Class No getOrElse result: ${no.getOrElse(20.3)}")
-    println(s"Class Yes getOrElse result: ${yes.getOrElse(20.3)}")
+    println(s"Class No getOrElse result: ${other.getOrElse(20.3)}")
+    println(s"Class Yes getOrElse result: ${maybe.getOrElse(20.3)}")
     println()
   }
 

@@ -2,16 +2,8 @@ package exercises
 
 class No extends Maybe[Nothing] {
 
-  def applyFunction[R](function: Function[Nothing, R]): No = {
-    new No()
-  }
+  override def applyFunction[R](function: Function[Nothing, R]): Maybe[R] = this
 
-  def getOrElse[R](other: R): R = {
-    other
-  }
-
-  override def toString: String = {
-    "No(value = <Empty>)"
-  }
+  override def getOrElse[R >: Nothing](other: R): R = other
 
 }
