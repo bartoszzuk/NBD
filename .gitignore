@@ -1,4 +1,6 @@
 .idea
 /zadanie-6/venv
 /out
+/project
+/target
 /**/*.iml
